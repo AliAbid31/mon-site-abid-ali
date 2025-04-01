@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #F5F5F5;
+        }
+        .sec1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #F5F5F5;
+            margin-top: 5vh;
+            font-family: 'Inter', sans-serif;
+        }
+        #but{
+            display: flex;
+            padding: 1vh;
+            gap: 0.7vh;
+            font-weight: 4px bold;
+            color: white;
+            white-space: nowrap;
+            width: 15vh;
+            height: 5vh;
+            align-items: center;
+            background-color: #0304FF;
+            border-radius: 15px;
+            margin-right: 49vh;
+            font-family: 'Inter', sans-serif;
+            transition: transform 1s ease-in-out;
+        }
+        #but:hover{
+            transform: scale(1.1);
+        }
+        #h2{
+            font-size: 40px;
+            color:#0304FF;
+            margin-right: 49vh;
+            margin-top: 10vh;
+            font-family: 'Inter', sans-serif;
+        }
+        .div1{
+            display: flex;
+            width: 58vh;
+            height: 8vh;
+            border-radius: 18px;
+            border: 1px solid #0304FF;
+            margin-right: 2vh;
+            background-color: #FFF;
+            align-items: center;
+            padding-left: 2vh;
+            opacity: 60%;
+            margin-top: 6vh;
+        }
+        .div1 i{
+            font-size: 30px;
+            color: #0304FF;
+        }
+        #p1{
+            border: none;
+            margin-left: 2vh;
+        }
+        .input-container{
+            display: flex;
+            width: 58vh;
+            height: 8vh;
+            border-radius: 18px;
+            border: 1px solid #0304FF;
+            margin-right: 2vh;
+            background-color: #FFF;
+            align-items: center;
+            padding-left: 2vh;
+            opacity: 60%;
+            margin-top: 5vh;
+        }
+        #password{
+            border: none;
+            margin-left: 2vh;
+        }
+        #togglePassword{
+            margin-left: 30vh;
+        }
+        #pt1{
+            display: flex;
+            color: white;
+            border: none;
+            height: 7vh;
+            width: 60vh;
+            background-color: #0304FF;
+            font-family: 'Inter', sans-serif;
+            border-radius: 15px;
+            padding: 0.4vh;
+            box-shadow: 0px 6px 12px rgba(2, 0, 0, 0.2);
+            margin-top: 3vh;
+            margin-right: 2.2vh;
+        }
+        #pt1:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 6px 30px 2px #020414;
+        }
+        .container5{
+            display: flex;
+            gap: 0.5vh;
+            margin-top: 6vh;
+        }
+        .container5 button{
+            color: white;
+            border: none;
+            font-family: 'Inter', sans-serif;
+            background-color: white;
+            border-radius: 15px;
+            padding: 0.3vh;
+            margin: 2vh;
+            box-shadow: 0px 4px 20px 2px #020414;
+        }
+        .container5 button img{
+            width: 5vh;
+            height: 5vh;
+        }
+        .container5 button:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 6px 30px 2px #020414;
+        }
+        .container6{
+            display: flex;
+            gap: 0.5vh;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+            color: #0304FF;
+            font-weight: 900;
+        }
+        #h5{
+            display: flex;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        #h5:hover{
+            color: rgb(15, 128, 128);
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+        #p2{
+            display: flex;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        #p2:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <section class="sec1">
+        <button id="but"><pre><i id="i1" class="fa-solid fa-arrow-left"></i> Back to home</pre></i></button>
+        <h2 id="h2">Log in</h2>
+        <div class="div1">
+            <i class="fas fa-envelope"></i>
+            <input id="p1" type="text" placeholder="Email">
+        </div>
+        <div class="input-container">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" placeholder="Password">
+            <i class="fa-regular fa-eye eye-icon" id="togglePassword"></i>
+        </div>
+        <input id="pt1" type="submit" value="Sign in">
+        <div class="container5">
+            <button id="but2"><img src="image copy.png" alt=""></button>
+            <button id="but3"><img src="image copy 6.png" alt=""></button>
+            <button id="but4"><img src="image copy 3.png" alt=""></button>
+        </div>
+        <div class="container6">
+            <p id="p2">
+                Don't have account? <h5 id="h5">Sign up</h5>
+            </p>
+        
+        </div>
+    </section>
+    <script>
+        const h5 = document.querySelector('#h5');
+        h5.addEventListener('click', function(){
+            window.location.href = 'Proj.html';
+        });
+        but2.addEventListener('click', () => {
+            window.location.href = "https://www.facebook.com/";
+        });
+        but3.addEventListener('click', () => {
+            window.location.href = "https://www.twitter.com/";
+        });
+        but4.addEventListener('click', () => {
+            window.location.href = "https://www.linkedin.com/";
+        });
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+        togglePassword.addEventListener('click', function (e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+
+    </script>
+</body>
+</html>

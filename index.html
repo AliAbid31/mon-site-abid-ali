@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>ETIC - S2EE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            overflow: hidden;
+            transition: transform 0.1s ease-in;
+        }
+
+        .sec1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('image copy 9.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 400px;
+            height: 96vh;
+            border-radius: 50px;
+            padding: 20px;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        #logo {
+            width: 10vh;
+            margin-top: 7vh;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 4vh;
+        }
+
+        .social-icons i {
+            font-size: 28px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 5vh;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            margin-top: 15vh;
+        }
+
+        .content p {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .ligne-blanche {
+            width: 60%;
+            height: 4px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 15px auto;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            bottom: 12vh;
+            width: 100%;
+        }
+
+        .btn {
+            width: 80%;
+            height: 7vh;
+            padding: 12px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+        }
+
+        .btn-signup {
+            background-color: white;
+            color: blue;
+        }
+
+        .btn-login {
+            background-color: blue;
+            color: white;
+        }
+        .slide-out {
+            transform: translateX(-100%);
+            transition: transform 0.1s ease-in;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="sec1">
+        <img id="logo" src="image copy 10.png" alt="ETIC Logo">
+
+        <div class="social-icons">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
+        <div class="content">
+            <p>
+                De retour pour sa 16ème édition,<br>
+                l’événement phare d’ETIC : le <br>
+                Salon de l’Emploi de l’ESI, plus <br>
+                communément appelé le S2EE,<br>
+                approche à grands pas !
+            </p>
+
+            <div class="ligne-blanche"></div>
+
+            <p>
+                Vous voulez en faire partie ?<br>
+                Rejoignez-nous dès aujourd’hui !
+            </p>
+        </div>
+
+        <div class="buttons">
+            <button id="btn1" class="btn btn-signup">Sign Up</button>
+            <button id=btn2 class="btn btn-login">Login</button>
+        </div>
+    </section>
+    <script>
+        function navigateWithAnimation(targetPage) {
+            document.body.classList.add('slide-out'); // Ajoute l'animation
+            setTimeout(() => {
+                window.location.href = targetPage; // Change de page après 1s
+            }, 100);
+        }
+
+        document.getElementById('btn1').addEventListener('click', () => navigateWithAnimation('Proj.html'));
+        document.getElementById('btn2').addEventListener('click', () => navigateWithAnimation('Proj1.html'));
+    </script>
+
+</body>
+</html>
